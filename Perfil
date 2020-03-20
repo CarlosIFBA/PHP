@@ -1,0 +1,54 @@
+!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Perfil
+		</title>
+		<style>
+			div {
+				background-color: #ADD8E6;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<?php
+			$vetor = array(
+				'imagem' => 'https://indepacific.com/img/user.png',
+				'nome' => 'Fernando',
+				'apelido' => 'Nando',
+				'idade' => '16',
+				'cidade' => 'Montes Claros - MG',
+				'endereco' => array (
+					'bairro' => 'Centro',
+					'rua' => 'Floriano Peixoto',
+					'numero' => '282'
+				),
+				'email' => 'fernando282@gmail.com',
+				'curso' => 'Agroindústria',
+				'disciplina' => 'Água'
+			);
+
+			echo (
+				"<br> <h1> Perfil </h1> <br>
+				<img src=".$vetor['imagem']."> <br> <h2>
+				Nome: ".$vetor['nome']."<br>
+				Apelido: ".$vetor['apelido']."<br>
+				Idade: ".$vetor['idade']."<br>
+				Cidade: ".$vetor['cidade']."<br>
+				Endereço: <br>
+				Bairro: ".$vetor['endereco']['bairro']."<br>
+				Rua: ".$vetor['endereco']['rua']."<br>
+				Número: ".$vetor['endereco']['numero']."<br>
+				Email: ".$vetor['email']."<br>
+				Curso: ".$vetor['curso']."<br>
+				Disciplina: ".$vetor['disciplina']."</h2> <br>"
+			);
+
+		?>
+		</div>
+	</body>
+</html>
